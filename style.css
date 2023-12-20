@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.header{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('face.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 600px;
+    width: auto;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-content: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: aliceblue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text{
+    color: rgb(173, 200, 223);
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+
+}
+.text h1{
+    font-size: 62px;
+    text-align: left;
+
+}
+.text p{
+    font-size: 14px;
+    text-align: left;
+}
+.project{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid rgb(62, 103, 139);
+    padding: 1px 30px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.project:hover{
+    border: 1px solid rgb(40, 100, 152);
+    background: rgb(40, 100, 152) ;
+    transition: 1s;
+}
+/*------ Achivements --------*/
+.Achivements{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.Achivements h1{
+    font-size: 45px;
+    
+}
+.Achivements h3{
+    font-size: 25px;
+    color: aliceblue;
+    
+}
+.Achivements p{
+    color: powderblue;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 20px;
+
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.skill1{
+       flex-basis: 30%;
+       background: rgb(10, 22, 55);
+       border-radius: 10px;
+       margin-bottom: 5%;
+       padding: 20px 12px;
+       box-sizing: border-box;
+}
+
