@@ -186,7 +186,7 @@ const Contact = () => {
                       Location
                     </h4>
                     <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300">
-                      Janmshedpur, Jharkhand
+                      Jamshedpur, Jharkhand
                     </p>
                   </div>
                 </div>
@@ -206,17 +206,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 p-3 bg-blue-500/10 rounded-lg mr-4">
-                    <Phone className="text-blue-500" size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-gray-900 dark:text-white mb-1 transition-colors duration-300">
-                      Phone
-                    </h4>
-                    <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300">
-                      +91 8789043345
-                    </p>
-                  </div>
+                  
+                  
                 </div>
               </div>
             </div>

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { SiLeetcode } from 'react-icons/si';
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -25,6 +27,10 @@ const Footer = () => {
             <a href="https://mail.google.com/mail/u/0/#inbox" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200">
               <Mail size={20} />
             </a>
+             <a href="https://leetcode.com/u/insaan_08/" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200">
+  <SiLeetcode size={20} />
+</a>
+
           </div>
         </div>
         

@@ -16,7 +16,7 @@ const About = () => {
             <div className="aspect-square rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-800 transition-colors duration-300">
               <div className="aspect-square rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-800 transition-colors duration-300">
   <img 
-    src="/myphoto.jpg" 
+    src="https://live.staticflickr.com/65535/54273563612_f3183077b2_o.jpg" 
     alt="My photo" 
     className="w-full h-full object-cover"
   />
