@@ -55,14 +55,16 @@ const About = () => {
               </div>
               
             </div>
-            
-            <a 
-  href="/resume.pdf" 
-  download 
-  className="inline-flex items-center px-6 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-medium transition-colors duration-200 shadow-lg hover:shadow-blue-500/20"
->
-  Download Resume
-</a>
+            <div className="flex justify-center">
+  <a 
+    href= "/Portfolio/resume.pdf"
+    download 
+    className="inline-flex items-center px-6 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-medium transition-colors duration-200 shadow-lg hover:shadow-blue-500/20"
+  >
+    Download Resume
+  </a>
+</div>
+
 
           </div>
         </div>

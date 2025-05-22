@@ -18,7 +18,7 @@ const Projects = () => {
       description: 'A personal portfolio website designed and developed to showcase my work and skills. Features a clean, modern design with smooth animations and responsive layout.',
       image: 'https://wwin.vn/wp-content/uploads/2023/06/portfolio-la-gi-1.jpg',
       tags: ['React', 'Tailwind CSS', 'Frontend'],
-      githubUrl: '#',
+      githubUrl: 'https://github.com/prisha27/Portfolio',
       liveUrl: '#',
     },
     {
