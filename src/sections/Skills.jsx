@@ -13,7 +13,6 @@ const Skills = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-gray-800 dark:text-gray-200">
           
-          {/* Programming Languages */}
           <div>
             <div className="flex items-center mb-3 text-blue-500">
               <Code className="mr-2" />
@@ -21,13 +20,13 @@ const Skills = () => {
             </div>
             <ul className="list-disc list-inside space-y-1">
               <li>C++</li>
-              <li>Java</li>
+              <li>Python</li>
               <li>C</li>
               <li>SQL</li>
             </ul>
           </div>
 
-          {/* Coursework */}
+    
           <div>
             <div className="flex items-center mb-3 text-blue-500">
               <BookOpen className="mr-2" />
@@ -39,10 +38,11 @@ const Skills = () => {
               <li>Database Management System (DBMS)</li>
               <li>Operating System (OS)</li>
               <li>Software Design Technology (UML Modeling)</li>
+              <li>Computer Networks (CN)</li>
             </ul>
           </div>
 
-          {/* Libraries & Databases */}
+       
           <div>
             <div className="flex items-center mb-3 text-blue-500">
               <Database className="mr-2" />
@@ -52,10 +52,12 @@ const Skills = () => {
               <li>React</li>
               <li>Express</li>
               <li>MySQL</li>
+              <li>Mongo Db</li>
+              <li>Tailwind</li>
             </ul>
           </div>
 
-          {/* Certifications */}
+          
           <div>
             <div className="flex items-center mb-3 text-blue-500">
               <Award className="mr-2" />

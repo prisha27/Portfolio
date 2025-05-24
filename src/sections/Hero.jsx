@@ -24,29 +24,27 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900 transition-colors duration-500"
     >
-      {/* Large background blobs */}
+      {/* Background blobs */}
       <div className="absolute top-16 left-12 w-64 h-64 bg-blue-700 rounded-full opacity-20 filter blur-3xl animate-slow-blob"></div>
       <div className="absolute bottom-20 right-24 w-80 h-80 bg-purple-700 rounded-full opacity-15 filter blur-4xl animate-slow-blob-delay"></div>
       <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-teal-700 rounded-full opacity-10 filter blur-3xl animate-slow-blob-slower -translate-x-1/2 -translate-y-1/2"></div>
 
-      {/* Left floating small shapes */}
+      {/* Floating shapes - left */}
       <div className="absolute left-6 top-1/4 w-6 h-6 rounded-full bg-purple-600 opacity-30 filter blur-md animate-float-slow"></div>
       <div className="absolute left-10 top-1/3 w-8 h-8 rounded-lg bg-blue-600 opacity-25 filter blur-md animate-float-slower delay-2000"></div>
       <div className="absolute left-4 top-2/3 w-5 h-5 rounded-full bg-teal-600 opacity-20 filter blur-md animate-float-slow delay-1000"></div>
       <div className="absolute left-16 top-3/4 w-10 h-10 rounded-full bg-purple-500 opacity-20 filter blur-lg animate-float-slow delay-1200"></div>
       <div className="absolute left-20 top-1/6 w-4 h-4 rounded-lg bg-blue-500 opacity-15 filter blur-md animate-float-slower delay-800"></div>
-      {/* More left elements */}
       <div className="absolute left-12 top-1/5 w-3 h-3 rounded-full bg-teal-400 opacity-20 filter blur-sm animate-float-slow delay-700"></div>
       <div className="absolute left-8 top-3/5 w-7 h-7 rounded-lg bg-purple-400 opacity-25 filter blur-sm animate-float-slower delay-1300"></div>
       <div className="absolute left-24 top-4/5 w-5 h-5 rounded-full bg-blue-400 opacity-15 filter blur-md animate-float-slow delay-900"></div>
 
-      {/* Right floating small shapes */}
+      {/* Floating shapes - right */}
       <div className="absolute right-6 top-1/4 w-6 h-6 rounded-full bg-purple-600 opacity-30 filter blur-md animate-float-slow delay-1500"></div>
       <div className="absolute right-10 top-1/3 w-8 h-8 rounded-lg bg-blue-600 opacity-25 filter blur-md animate-float-slower"></div>
       <div className="absolute right-4 top-2/3 w-5 h-5 rounded-full bg-teal-600 opacity-20 filter blur-md animate-float-slow delay-500"></div>
       <div className="absolute right-16 top-3/4 w-10 h-10 rounded-full bg-purple-500 opacity-20 filter blur-lg animate-float-slow delay-700"></div>
       <div className="absolute right-20 top-1/6 w-4 h-4 rounded-lg bg-blue-500 opacity-15 filter blur-md animate-float-slower delay-1000"></div>
-      {/* More right elements */}
       <div className="absolute right-12 top-1/5 w-3 h-3 rounded-full bg-teal-400 opacity-20 filter blur-sm animate-float-slow delay-1000"></div>
       <div className="absolute right-8 top-3/5 w-7 h-7 rounded-lg bg-purple-400 opacity-25 filter blur-sm animate-float-slower delay-1200"></div>
       <div className="absolute right-24 top-4/5 w-5 h-5 rounded-full bg-blue-400 opacity-15 filter blur-md animate-float-slow delay-1100"></div>
@@ -67,7 +65,7 @@ const Hero = () => {
               Hello, I'm
             </span>
             <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-teal-400 bg-clip-text text-transparent">
+              <span className="animated-gradient bg-clip-text text-transparent">
                 Prisha Singh
               </span>
               <span className="absolute bottom-0 left-0 w-full h-3 bg-blue-400/20 rounded-sm -z-10 transform -rotate-1"></span>
@@ -98,6 +96,24 @@ const Hero = () => {
       </div>
 
       <style jsx>{`
+        @keyframes gradientShift {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+
+        .animated-gradient {
+          background-image: linear-gradient(270deg, #60a5fa, #a78bfa, #14b8a6);
+          background-size: 600% 600%;
+          animation: gradientShift 6s ease infinite;
+        }
+
         @keyframes slowBlob {
           0%, 100% {
             transform: translate(0, 0) scale(1);
@@ -144,6 +160,7 @@ const Hero = () => {
             transform: translateY(-6px);
           }
         }
+
         .animate-slow-blob {
           animation: slowBlob 15s ease-in-out infinite;
         }
@@ -159,36 +176,17 @@ const Hero = () => {
         .animate-float-slower {
           animation: floatSlower 8s ease-in-out infinite;
         }
-        .delay-500 {
-          animation-delay: 0.5s;
-        }
-        .delay-700 {
-          animation-delay: 0.7s;
-        }
-        .delay-800 {
-          animation-delay: 0.8s;
-        }
-        .delay-900 {
-          animation-delay: 0.9s;
-        }
-        .delay-1000 {
-          animation-delay: 1s;
-        }
-        .delay-1100 {
-          animation-delay: 1.1s;
-        }
-        .delay-1200 {
-          animation-delay: 1.2s;
-        }
-        .delay-1300 {
-          animation-delay: 1.3s;
-        }
-        .delay-1500 {
-          animation-delay: 1.5s;
-        }
-        .delay-2000 {
-          animation-delay: 2s;
-        }
+
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-700 { animation-delay: 0.7s; }
+        .delay-800 { animation-delay: 0.8s; }
+        .delay-900 { animation-delay: 0.9s; }
+        .delay-1000 { animation-delay: 1s; }
+        .delay-1100 { animation-delay: 1.1s; }
+        .delay-1200 { animation-delay: 1.2s; }
+        .delay-1300 { animation-delay: 1.3s; }
+        .delay-1500 { animation-delay: 1.5s; }
+        .delay-2000 { animation-delay: 2s; }
       `}</style>
     </section>
   );

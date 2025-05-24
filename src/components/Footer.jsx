@@ -24,9 +24,6 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/prisha-singh-083439255?" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200">
               <Linkedin size={20} />
             </a>
-            <a href="https://mail.google.com/mail/u/0/#inbox" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200">
-              <Mail size={20} />
-            </a>
              <a href="https://leetcode.com/u/insaan_08/" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200">
   <SiLeetcode size={20} />
 </a>

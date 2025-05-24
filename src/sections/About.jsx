@@ -57,11 +57,12 @@ const About = () => {
             </div>
             <div className="flex justify-center">
   <a 
-    href= "/Portfolio/resume.pdf"
-    download 
+    href= "https://drive.google.com/file/d/1hxZcEfUTZW1N8jwOl5Zd0Qoi8baa8txK/view?usp=drive_link"
+    target="_blank"
+    rel="noopener noreferrer"
     className="inline-flex items-center px-6 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-medium transition-colors duration-200 shadow-lg hover:shadow-blue-500/20"
   >
-    Download Resume
+    View Resume
   </a>
 </div>
 
