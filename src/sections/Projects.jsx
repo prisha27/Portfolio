@@ -1,5 +1,8 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import imgpng from '../assets/image.png'
+import gym_img from '../assets/gymphoto.png'
+import profile from '../assets/profile.png'
 
 const Projects = () => {
   const projects = [
@@ -16,7 +19,7 @@ const Projects = () => {
       id: 2,
       title: 'Portfolio Website',
       description: 'A personal portfolio website designed and developed to showcase my work and skills. Features a clean, modern design with smooth animations and responsive layout.',
-      image: 'https://wwin.vn/wp-content/uploads/2023/06/portfolio-la-gi-1.jpg',
+      image: profile,
       tags: ['React', 'Tailwind CSS', 'Frontend'],
       githubUrl: 'https://github.com/prisha27/Portfolio',
       liveUrl: '#',
@@ -25,11 +28,22 @@ const Projects = () => {
       id: 3,
       title: 'Gym Suggestion Dashboard',
       description: 'Built a responsive and dynamic fitness app using React.js, enabling users to generate personalized workout plans.',
-      image: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a94a23160307447.63b27b4bb6f94.jpg',
+      image: gym_img,
       tags: ['JavaScript', 'React', 'Frontend'],
       githubUrl: 'https://github.com/prisha27/FlexFlow',
       liveUrl: 'https://prisha27.github.io/FlexFlow/',
     },
+    {
+  id: 4,
+  title: 'Hospital Management Dashboard',
+  description: 'Built a responsive and dynamic Hospital Management app using React.',
+  image: imgpng,
+  tags: ['React', 'Dashboard', 'Frontend'],
+  githubUrl: 'https://github.com/prisha27/task1_FitPeo_Tech',
+  liveUrl: 'https://task1-fit-peo-tech.vercel.app/',
+},
+
+    
   ];
 
 
