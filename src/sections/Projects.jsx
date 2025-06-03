@@ -3,16 +3,17 @@ import { ExternalLink, Github } from 'lucide-react';
 import imgpng from '../assets/image.png'
 import gym_img from '../assets/gymphoto.png'
 import profile from '../assets/profile.png'
+import backend from '../assets/original.jpg'
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Note Management Website',
-      description: 'A fully responsive Todo List platform built with React, Node.js, and MongoDB. Features include user authentication, notes filtering',
-      image: 'https://www.clipartbest.com/cliparts/di7/Lgd/di7Lgd4xT.png',
-      tags: ['React', 'Node.js', 'MongoDB', 'Frontend', 'Backend'],
-      githubUrl: '#',
+      title: 'VideoTuber Backend',
+      description: 'Developed backend for a  video streaming platform using Node.js, Express, MongoDB, and JWT, with secure user authentication, efficient server-side resource management, and seamless video encoding, storage, and playback.',
+      image: backend,
+      tags: ['React', 'Node.js', 'MongoDB', 'Postman'],
+      githubUrl: 'https://github.com/prisha27/VideoTube_backend',
       liveUrl: '#',
     },
     {
@@ -60,7 +61,7 @@ const Projects = () => {
           <div className="h-1 w-20 bg-blue-500 mx-auto rounded-full"></div>
         </div>
 
-        {/* Single 'All' button if you want to keep it */}
+        {/*All button if you want to keep it */}
         <div className="flex justify-center mb-12">
           <button
             className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-medium cursor-default"
