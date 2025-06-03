@@ -12,17 +12,16 @@ const About = () => {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
-            <div className="aspect-square rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-800 transition-colors duration-300">
-              <div className="aspect-square rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-800 transition-colors duration-300">
-  <img 
-    src="https://live.staticflickr.com/65535/54273563612_f3183077b2_o.jpg" 
-    alt="My photo" 
-    className="w-full h-full object-cover"
-  />
+  <div className="relative">
+    <div className="w-xl aspect-square rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-800 transition-colors duration-300">
+      <img 
+        src="https://res.cloudinary.com/dp4y0vzuh/image/upload/v1748980905/pic2_ydkpzt.jpg" 
+        alt="My photo" 
+        className="w-auto h-full object-cover"
+      />
 </div>
 
-            </div>
+            
             <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-500 rounded-xl hidden lg:block"></div>
             <div className="absolute -top-6 -left-6 w-32 h-32 border-2 border-teal-400 rounded-xl hidden lg:block"></div>
           </div>
