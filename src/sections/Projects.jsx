@@ -4,7 +4,7 @@ import imgpng from '../assets/image.png'
 import gym_img from '../assets/gymphoto.png'
 import profile from '../assets/profile.png'
 import backend from '../assets/original.jpg'
-
+import recircle from '../assets/recircle.png' 
 const Projects = () => {
   const projects = [
     {
@@ -18,11 +18,11 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Portfolio Website',
-      description: 'A personal portfolio website designed and developed to showcase my work and skills. Features a clean, modern design with smooth animations and responsive layout.',
-      image: profile,
-      tags: ['React', 'Tailwind CSS', 'Frontend'],
-      githubUrl: 'https://github.com/prisha27/Portfolio',
+      title: 'ReCircle',
+      description: 'A sustainability-focused web app where users can track eco-scores, earn achievements, share/scan items, and compete on leaderboards while connecting with local recycling centers.',
+      image: recircle,
+      tags: ['React', 'Tailwind CSS', 'Frontend','Node','Firebase','MongoDB','Cloudinary'],
+      githubUrl: 'https://github.com/AkshatSharan/ReCircle',
       liveUrl: '#',
     },
     {
